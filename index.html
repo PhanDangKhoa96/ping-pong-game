@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ping Pong Game</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #1a1a1a;
+            }
+            canvas {
+                border: 2px solid #ffffff;
+            }
+            img {
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="gameCanvas" width="1600" height="800"></canvas>
+        <img id="paddleImg1" src="./1.png" alt="Paddle" style="display: none" />
+        <img id="paddleImg2" src="./2.png" alt="Paddle" style="display: none" />
+        <img id="ballImg" src="./3.png" alt="Ball" style="display: none" />
+        <script src="game.js"></script>
+    </body>
+</html>
